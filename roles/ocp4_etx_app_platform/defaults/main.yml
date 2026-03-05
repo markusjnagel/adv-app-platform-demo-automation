@@ -343,3 +343,13 @@ ocp4_etx_app_platform_tpa_s3_region: "https://s3-{{ ocp4_etx_app_platform_noobaa
 ocp4_etx_app_platform_tpa_appDomain: "-{{ ocp4_etx_app_platform_tpa_namespace }}.{{ r_openshift_subdomain }}"
 ocp4_etx_app_platform_tpa_oidc_issuer:
   "https://{{ ocp4_etx_app_platform_rhbk_host }}.{{ r_openshift_subdomain }}/realms/{{ ocp4_etx_app_platform_rhbk_realm_backstage_name }}" # yamllint disable-line rule:line-length
+
+# ------------------------------------------------
+# Red Hat Advanced Cluster Security
+# ------------------------------------------------
+
+ocp4_etx_app_platform_acs_application_name: acs
+ocp4_etx_app_platform_acs_namespace: stackrox 
+ocp4_etx_app_platform_acs_clustername: local-cluster
+ocp4_etx_app_platform_acs_adminpassword: "{{ common_password }}"
+
