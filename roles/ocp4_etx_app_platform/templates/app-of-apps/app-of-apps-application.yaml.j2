@@ -227,3 +227,10 @@ spec:
             url: {{ r_openshift_api_server }}
           gitlab:
             url: https://{{ ocp4_etx_app_platform_gitlab_config_host }}
+
+        acs:
+          enabled: true
+          name: {{ ocp4_etx_app_platform_acs_application_name }}
+          namespace: {{ ocp4_etx_app_platform_acs_namespace }}
+          clusterName: {{ ocp4_etx_app_platform_acs_clustername }}
+          adminPassword: {{ ocp4_etx_app_platform_acs_adminpassword }}
