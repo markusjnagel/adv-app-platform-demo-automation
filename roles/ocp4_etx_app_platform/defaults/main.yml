@@ -220,10 +220,6 @@ ocp4_etx_app_platform_rhbk_client_backstage_plugin_secret:
 
 ocp4_etx_app_platform_rhbk_user_password: "{{ common_password }}"
 
-ocp4_etx_app_platform_rhbk_client_tpa_cli_secret:
-  "{{ lookup('ansible.builtin.password', '/tmp/passwordfile-client-tpa-cli', chars=['ascii_letters', 'digits'], length=32) }}"
-
-
 # ------------------------------------------------
 # Quay
 # ------------------------------------------------
@@ -282,7 +278,7 @@ ocp4_etx_app_platform_rhdh_gitops_password: "{{ common_password }}"
 # ------------------------------------------------
 
 ocp4_etx_app_platform_rhdh_argo_application_name: backstage-bootstrap
-ocp4_etx_app_platform_rhdh_namespace: backstage
+ocp4_etx_app_platform_rhdh_namespace: rhdh
 ocp4_etx_app_platform_rhdh_psql_password: password
 
 # ------------------------------------------------
